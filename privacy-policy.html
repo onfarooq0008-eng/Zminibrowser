@@ -15,23 +15,24 @@
 </head><body>
 <header><div class="bar"><a class="brand" href="index.html"><img src="assets/icon-192.png" alt="" width="30" height="30">Veya Browser</a><nav><a href="about.html">About</a><a href="privacy-policy.html" class=on>Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="data-deletion.html">Data Deletion</a><a href="contact.html">Contact</a></nav></div></header>
 <main>
-<h1>Privacy Policy</h1><p class="meta">Last updated: October 12, 2026</p>
+<h1>Privacy Policy</h1><p class="meta">Last updated: October 14, 2026</p>
 <p>This Privacy Policy explains how <b>Veya Browser</b> (&ldquo;the app&rdquo;), developed by Umar Farooq (&ldquo;we&rdquo;, &ldquo;us&rdquo;), handles information. By using the app you agree to this policy.</p>
 <div class="card"><b>Summary</b><ul>
 <li>No account is needed and we do not ask for your name, email or phone number inside the app.</li>
-<li>Your bookmarks, history and settings stay on your device. We do not receive them.</li>
-<li>The app shows ads from <b>Meta Audience Network</b>. Meta may collect device information, such as your advertising ID and IP address, to deliver and measure ads.</li>
+<li>Your bookmarks, history, downloads list and settings stay on your device. We do not receive them.</li>
+<li>The app shows ads from <b>Meta Audience Network</b> when you close the app and when you start a download. Meta may collect device information, such as your advertising ID and IP address, to deliver and measure ads.</li>
+<li>To block ads, the app downloads public filter lists (EasyList and EasyPrivacy) from the internet every few days.</li>
 <li>We do not sell your personal data.</li>
 </ul></div>
 
 <h2>1. Information stored on your device</h2>
-<p>To work as a browser, the app stores the following <b>locally on your device</b>: bookmarks, home-page shortcuts, browsing history (not saved in private tabs), download history, per-site settings, app settings, cookies and website data kept by Android WebView, and a counter of requests blocked by the ad blocker. We do not receive or have access to this data. You can erase it any time from <i>Menu &rarr; Clear Browsing Data</i>, or by uninstalling the app.</p>
+<p>To work as a browser, the app stores the following <b>locally on your device</b>: bookmarks, home-page shortcuts, browsing history (not saved in private tabs), the list of your downloads, per-site settings, app settings, cookies and website data kept by Android WebView, a counter of blocked requests, your user scripts, the elements you hid with &ldquo;Mark as ad&rdquo;, and (only if you turn it on) the addresses of your open tabs so they can be restored. We do not receive or have access to this data. You can erase it from <i>Menu &rarr; Clear data</i>, or by uninstalling the app.</p>
 
 <h2>2. Information we collect</h2>
-<p>We do not run our own servers for the app and we do not collect personal information ourselves. We do not use analytics or crash-reporting SDKs. The only third-party SDK that communicates with its own servers is the advertising SDK described below.</p>
+<p>We do not run our own servers for the app and we do not collect personal information ourselves. We do not use analytics or crash-reporting SDKs. The third-party services the app talks to are described below.</p>
 
 <h2>3. Advertising (Meta Audience Network)</h2>
-<p>The app uses the Meta Audience Network SDK to show interstitial (full-screen) ads. These ads can appear when you open the app, when you close the app, and when you choose the &ldquo;fast download&rdquo; option. To load, show and measure ads and to prevent fraud, the SDK may collect and process information from your device, which can include:</p>
+<p>The app uses the Meta Audience Network SDK to show interstitial (full-screen) ads. These ads can appear when you close the app and when you start a download. To load, show and measure ads and to prevent fraud, the SDK may collect and process information from your device, which can include:</p>
 <ul>
 <li>Advertising ID (such as the Google Advertising ID) and device identifiers</li>
 <li>IP address and approximate location derived from it</li>
@@ -39,40 +40,53 @@
 <li>Ad interaction data (ads shown, clicked or dismissed)</li>
 </ul>
 <p>This information is processed by Meta under <a href="https://www.facebook.com/privacy/policy/" rel="noopener">Meta&rsquo;s Privacy Policy</a>. We do not receive your personal data from Meta; we only receive aggregated advertising performance reports.</p>
-<p><b>Your ad choices.</b> You can reset your advertising ID or opt out of ads personalization in your device settings (on most Android devices: <i>Settings &rarr; Privacy &rarr; Ads</i>). You can also manage ad preferences in your Meta account&rsquo;s ad settings. Opting out does not remove ads; it makes them less personalized.</p>
+<p><b>Your ad choices.</b> You can reset your advertising ID or opt out of ads personalization in your device settings (on most Android devices: <i>Settings &rarr; Privacy &rarr; Ads</i>). Opting out does not remove ads; it makes them less personalized.</p>
 
-<h2>4. Websites you visit</h2>
-<p>When you open a website, your device connects directly to that site and to the third-party content it loads. That site receives standard information such as your IP address and browser details, and may set cookies under its own privacy policy. We do not see or control this. The app offers tools that can reduce tracking: an ad and tracker blocker, third-party cookie blocking, an optional Do Not Track request, private tabs and a clear-data-on-exit option. Private tabs do not save history, but they do not make you anonymous to websites, your network or your internet provider. The built-in ad blocker applies to web pages only and does not block the app&rsquo;s own ads.</p>
+<h2>4. Ad blocker filter lists</h2>
+<p>The ad blocker uses the public EasyList and EasyPrivacy filter lists. The app downloads them from <i>easylist.to</i> (or the mirror <i>easylist-downloads.adblockplus.org</i>) when you first use it and then about every 4 days. You can turn the automatic update off, or update manually, in <i>Settings &rarr; General &rarr; Ad blocking</i>. Those servers can see your IP address and that a download was requested, like any website. No browsing data is sent.</p>
 
-<h2>5. Search</h2>
-<p>Text you type in the address bar that is not a web address is sent to the search engine you select in Settings (Google by default, or Bing, DuckDuckGo, Yahoo or a custom one). That search engine&rsquo;s privacy policy applies.</p>
+<h2>5. Downloads</h2>
+<p>When you download a file, the app connects directly to the website that hosts it, sending the cookies and the address of the page you came from (so the site allows the download), the same way a browser does. Files are saved in the &ldquo;Veya Browser&rdquo; folder inside your phone&rsquo;s Downloads folder. Downloads run in the background and show a notification with their progress. We do not upload or scan your files.</p>
 
-<h2>6. Permissions</h2>
+<h2>6. Websites you visit</h2>
+<p>When you open a website, your device connects directly to that site and to the third-party content it loads. That site receives standard information such as your IP address and browser details, and may set cookies under its own privacy policy. We do not see or control this. The app offers tools that can reduce tracking: an ad and tracker blocker, third-party cookie blocking, optional Do Not Track and Global Privacy Control requests, private tabs and a clear-data-on-exit option. Private tabs do not save history, but they do not make you anonymous to websites, your network or your internet provider.</p>
+
+<h2>7. Search, translate and AI</h2>
+<p>Text you type in the address bar that is not a web address is sent to the search engine you select in Settings (Google by default, or Bing, DuckDuckGo, Yahoo or a custom one). The <i>Translate</i> feature opens the page through Google Translate. The <i>AI</i> feature only works when you tap it: it copies the page text and your request to your clipboard and opens the AI website you chose in Settings, where you paste it yourself. That website&rsquo;s privacy policy applies to what you paste.</p>
+
+<h2>8. Links that open in other apps</h2>
+<p>When a link can be opened by another app you have installed (for example YouTube), the app asks you whether to open it there. To do this it checks which installed apps handle that kind of link; this check stays on your device and is not collected. If you choose to open the app, the link is passed to that app.</p>
+
+<h2>9. Permissions</h2>
 <table>
 <tr><th>Permission</th><th>Why it is used</th></tr>
-<tr><td>Internet / network state</td><td>Load web pages, download files, show offline messages and load ads.</td></tr>
-<tr><td>Camera</td><td>Only when you tap <i>QR Scanner</i>. Frames are processed on your device and are not saved or sent anywhere. Requested only at that moment.</td></tr>
-<tr><td>Storage (Android 9 and older)</td><td>Save downloads to your Downloads folder.</td></tr>
+<tr><td>Internet / network state</td><td>Load web pages, download files and filter lists, and load ads.</td></tr>
+<tr><td>Camera</td><td>Only when you tap <i>Scan QR code</i>. Frames are processed on your device and are not saved or sent anywhere. Requested only at that moment.</td></tr>
+<tr><td>Notifications</td><td>Show download progress and completion.</td></tr>
+<tr><td>Foreground service</td><td>Keep a download running while the app is in the background.</td></tr>
 <tr><td>Advertising ID</td><td>Used by the advertising SDK to show and measure ads. You can reset or opt out in device settings.</td></tr>
 </table>
-<p>Voice search opens Android&rsquo;s built-in speech recognition. Audio is handled by that system service under its own privacy policy, not by this app. Websites cannot use your camera, microphone or location through the app.</p>
+<p>Read aloud uses your phone&rsquo;s built-in text-to-speech service, and voice features are handled by Android under its own privacy policy. Websites cannot use your camera, microphone or location through the app.</p>
 
-<h2>7. Data sharing</h2>
+<h2>10. Default browser reminder</h2>
+<p>If Veya Browser is not your default browser, the app may show a reminder at most once every 4 days. You can choose &ldquo;Don&rsquo;t ask again&rdquo;. Nothing is sent anywhere when you answer.</p>
+
+<h2>11. Data sharing</h2>
 <p>We do not sell your personal data. We share information only (a) with Meta Audience Network as described above, and (b) if required by law.</p>
 
-<h2>8. Data retention and your rights</h2>
+<h2>12. Data retention and your rights</h2>
 <p>We do not hold personal data about you, so there is nothing for us to retain or delete on our side. Data on your device is under your control. Depending on where you live (for example the EEA, UK or California) you may have rights over data held by Meta, such as access, deletion or opting out of personalized ads; these are exercised with Meta and through your device settings. For anything related to the app, contact us at <a href="mailto:admin@fastvpnn.pp.ua">admin@fastvpnn.pp.ua</a>. See also <a href="data-deletion.html">Data Deletion</a>.</p>
 
-<h2>9. Children</h2>
+<h2>13. Children</h2>
 <p>The app is a general-purpose browser and is not directed to children under 13. We do not knowingly collect data from children. Because it provides open access to the internet, parents should supervise use by minors. If you believe a child has provided information through the app, contact us and we will help.</p>
 
-<h2>10. Security</h2>
-<p>The app blocks pages with invalid security certificates and does not expose device features to websites. No method of electronic storage or transmission is completely secure.</p>
+<h2>14. Security</h2>
+<p>The app blocks pages with invalid security certificates unless you choose to continue, and does not expose device features to websites. No method of electronic storage or transmission is completely secure.</p>
 
-<h2>11. Changes to this policy</h2>
+<h2>15. Changes to this policy</h2>
 <p>We may update this policy from time to time. The latest version is always on this page with its date above. Continued use of the app means you accept the updated policy.</p>
 
-<h2>12. Contact</h2>
+<h2>16. Contact</h2>
 <p>Umar Farooq<br>Email: <a href="mailto:admin@fastvpnn.pp.ua">admin@fastvpnn.pp.ua</a></p>
 </main>
 <footer><div>&copy; 2026 Umar Farooq. All rights reserved. &middot; <a href="mailto:admin@fastvpnn.pp.ua">admin@fastvpnn.pp.ua</a><br>
